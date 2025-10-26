@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+report.json
+vuln_report.txt
+.env

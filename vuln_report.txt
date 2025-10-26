@@ -1,0 +1,16 @@
+Sample Vulnerability Report
+
+Target: 192.168.56.101
+Scan date: 2025-10-26
+
+Findings:
+1) FTP (21) - Anonymous login allowed (HIGH)
+   - Evidence: anonymous login accepted during manual check (lab VM)
+   - Risk: unauthorized file access
+   - Remediation: disable anonymous login; enforce authentication; patch service
+
+2) SSH (22) - OpenSSH outdated (MEDIUM)
+   - Evidence: version string returned by nmap
+   - Remediation: upgrade OpenSSH
+
+Notes: All testing performed in controlled lab environment.
